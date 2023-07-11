@@ -1,7 +1,7 @@
 import Navbar from './Components/Navbar';
 import './App.css';
 import React, { useState } from 'react';
-import Form from './Components/Layout';
+import Layout from './Components/Layout';
 import Alert from './Components/Alert';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
       <Navbar mode={mode} togglemode={togglemode}/>
       <Alert alert={alert}/>
       <br/>
-      <Form/>
+      <Layout mode={mode} />
     </div>
   );
 }
