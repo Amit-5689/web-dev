@@ -11,16 +11,18 @@ function App() {
     setalert({message: message, type:type})
     setTimeout(() => {
       setalert(null)
-    }, 2000);
+    }, 1500);
   }
   const togglemode=()=>{
     if(mode==='light'){
       setmode('dark')
       showalert("Dark Mode Enabled","success")
+      document.body.style.backgroundColor="grey"
     }
     else{
       setmode('light')
       showalert("Light Mode Enabled","success")
+      document.body.style.backgroundColor="white"
     }
   }
   return (

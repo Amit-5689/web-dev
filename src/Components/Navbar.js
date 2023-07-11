@@ -17,17 +17,11 @@ export default function Navbar({mode, togglemode}) {
           <li className="nav-item">
             <a className="nav-link" href="#">Features</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">Pricing</a>
-          </li>
         </ul>
       </div>
-      <div className="form-check form-switch" style={{float:"right"}}>
+      <div className="form-check form-switch" style={{float:"right",color:mode==="light"?"black":"white"}}>
   <input className="form-check-input" onClick={togglemode} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
-  <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={{
-        backgroundColor: mode === 'light' ? "dark" : "light",
-        color: mode === 'light' ? "dark" : "light"
-    }}>Enable dark mode</label>
+  <label className="form-check-label" htmlFor="flexSwitchCheckDefault" >Enable dark mode</label>
 </div>
     </div>
   </nav></div>
